@@ -20,7 +20,7 @@ class RNShakeEvent {
       }
     });
   }
-  static removeEventListener(type: string, handler: Function) {
+  static removeEventListener(type: string, handler?: Function) {
     invariant(
       type === 'shake',
       'RNShakeEventIOS only supports `shake` event'
